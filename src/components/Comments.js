@@ -1,8 +1,8 @@
 import React from 'react';
-import { Comment, Icon, Header } from 'semantic-ui-react';
+import { Comment, Header } from 'semantic-ui-react';
 import faker from 'faker';
 
-const Comments = () => {
+const Comments = props => {
     return (
         <div>
             <Comment.Group>
@@ -13,7 +13,8 @@ const Comments = () => {
                     <Comment.Avatar src={faker.image.avatar()} />
                     <Comment.Content>
                         <Comment.Author as='a'>
-                            {faker.name.firstName()} {faker.name.lastName()}
+                            {/* {faker.name.firstName()} {faker.name.lastName()} */ props.author}
+
                         </Comment.Author>
                         <Comment.Metadata>
                             <div>Today at 5:42PM</div>

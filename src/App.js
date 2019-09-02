@@ -12,7 +12,7 @@ function App() {
           <Grid.Column width={3}>
           </Grid.Column>
           <Grid.Column width={10}>
-            <Comments />
+            <Comments author="John Wick" />
           </Grid.Column>
           <Grid.Column width={3}>
           </Grid.Column>
