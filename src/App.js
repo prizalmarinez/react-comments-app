@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import { Grid } from 'semantic-ui-react';
 // comonents
-import Comments from './components/Comments'
+import Comments from './components/Comments';
+import ApprovalCard from './components/ApprovalCard'
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
           <Grid.Column width={3}>
           </Grid.Column>
           <Grid.Column width={10}>
-            <Comments author="John Wick" />
+            <ApprovalCard>
+              <Comments author="John Wick" />
+            </ApprovalCard>
           </Grid.Column>
           <Grid.Column width={3}>
           </Grid.Column>

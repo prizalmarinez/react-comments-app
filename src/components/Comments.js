@@ -13,8 +13,7 @@ const Comments = props => {
                     <Comment.Avatar src={faker.image.avatar()} />
                     <Comment.Content>
                         <Comment.Author as='a'>
-                            {/* {faker.name.firstName()} {faker.name.lastName()} */ props.author}
-
+                            {props.author}
                         </Comment.Author>
                         <Comment.Metadata>
                             <div>Today at 5:42PM</div>
