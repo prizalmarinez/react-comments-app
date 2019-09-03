@@ -1,9 +1,9 @@
 import React from 'react';
-import { Button, Card } from 'semantic-ui-react'
+import { Button, Card, Grid } from 'semantic-ui-react'
 
 const ApprovalCard = props => {
     return (
-        <Card.Group>
+        <Grid.Column>
             <Card>
                 <Card.Content>
                     {props.children}
@@ -19,7 +19,7 @@ const ApprovalCard = props => {
                     </div>
                 </Card.Content>
             </Card>
-        </Card.Group>
+        </Grid.Column>
     );
 };
 

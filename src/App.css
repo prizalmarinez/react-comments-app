@@ -1,3 +1,9 @@
 .App{
   margin-top: 50px;
 }
+.text-capitalize{
+  text-transform: capitalize;
+}
+.mt-20{
+  margin-top: 20px;
+}
